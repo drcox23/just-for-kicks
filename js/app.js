@@ -1,11 +1,30 @@
 // 1. Add an event to the 'See Details' content that will create an alert box that says 'Not Available in Hawaii.' after clicking on See Details.
-
+var theDeets = document.getElementById("details");
+theDeets.addEventListener('click', showDetails);
+function showDetails(){
+    console.log("Aloha");
+    alert("Not Available in Hawaii");
+}
 
 //2. Add an event to the div element with the id of 'name1' that will show/hide the description ('descrip1') after hovering over Air Jordan II.
+
+var showDesc = document.getElementById("name1");
+showDesc.addEventListener('mouseover', seeDesc);
+showDesc.addEventListener('mouseout', seeDesc);
+descrip1.style.display = 'none';
+function seeDesc(){
+    if (descrip1.style.display === 'none'){
+        descrip1.style.display = 'block';
+    }else{
+        descrip1.style.display = 'none';
+    }
+};
 
 
 //3. Add an event to the div element with the id of 'name2' that will show/hide the following description after clicking on the element.
 //'The instantly recognizable Jumpman silhouette made its debut with the Air Jordan 3 during Michael Jordan's 1987-88 NBA season.'
+
+
 
 
 //You'll need to:
